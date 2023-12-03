@@ -22,8 +22,8 @@ title: Neil's Homepage
 email: neil.raymond.schroeder@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Homepage for Neil Schroeder: a place to share my thoughts and projects as a machine learning engineer in agricultural computer vision and PhD candidate in high energy physics.
-url: "https://neilSchroeder.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://neilSchroeder.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  neilSchroeder
 
 # Build settings
