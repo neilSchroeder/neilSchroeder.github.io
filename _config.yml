@@ -27,7 +27,7 @@ url: "https://neilSchroeder.github.io" # the base hostname & protocol for your s
 github_username:  neilSchroeder
 
 # Build settings
-theme: hacker
+theme: minima
 plugins:
   - jekyll-feed
 
