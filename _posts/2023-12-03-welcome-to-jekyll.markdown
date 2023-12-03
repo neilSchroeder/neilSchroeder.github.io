@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+layout: single
+title:  "My Very First Post"
 date:   2023-12-03 15:23:52 -0600
 categories: jekyll update
 ---

@@ -27,9 +27,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 github_username:  neilSchroeder
 
 # Build settings
-theme: jekyll-theme-hacker
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
