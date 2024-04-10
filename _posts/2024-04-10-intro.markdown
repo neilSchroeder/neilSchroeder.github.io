@@ -1,0 +1,14 @@
+---
+layout: single
+title:  "About Me"
+date:   2024-04-10
+categories: jekyll update
+---
+
+Hello, and welcome! My name is Neil. I am a physicist with a PhD in High Energy Physics from the University of Minnesota, and an experienced machine learning engineer specializing in computer vision applications. 
+
+With a strong background in statistics, machine learning, data analysis, and data visualization, I offer a versatile skillset valuable for tackling complex technical challenges. My expertise spans areas such as developing machine learning models, performing in-depth data analysis, creating impactful data visualizations, and communicating insights through technical writing. Additionally, I have extensive experience in software engineering, allowing me to transform concepts into production-ready software solutions.
+
+My academic background, including rigorous training in physics, has instilled in me a philosophy of striving for excellence and doing things the right way from the start. I'm driven by a commitment to thoroughly understanding problems, thinking critically, and taking a meticulous approach to ensure optimal solutions. Rather than accepting shortcuts or compromises, I prefer to invest the time upfront to get things right the first time around. This mindset allows me to deliver high-quality work that stands the test of time.
+
+On a personal note, I'm an avid rock climber and home chef - pursuits that allow me to challenge myself and inspire personal growth. I'm also known to pick up a good book or two as a way to escape and unwind. I also enjoy traveling to experience different cultures and perspectives, and to keep my sense of wonder kindled.
