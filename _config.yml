@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Neil Schroeder"
-  avatar           : "_img/avatar.jpg"
+  avatar           : "/_img/avatar.jpg"
   bio              : "Physicist turned ML Engineer with a passion for solving problems with science."
   location         : "Minneapolis, MN"
   # email            : mailto:neil.raymond.schroeder@gmail.com
