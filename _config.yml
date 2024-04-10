@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Neil Schroeder"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Physicist turned ML Engineer working in precision agriculture."
+  avatar           : "_img/avatar.jpg"
+  bio              : "Physicist turned ML Engineer with a passion for solving problems with science."
   location         : "Minneapolis, MN"
   # email            : mailto:neil.raymond.schroeder@gmail.com
   links:
@@ -116,18 +116,18 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/neilSchroeder"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.cern.ch/nschroed"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/neil-schroeder-207b91a3/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/that_higgs_guy"
 
 # Site Footer
 footer:
