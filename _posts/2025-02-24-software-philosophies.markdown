@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Software Philosophy - Clean Code And Philosophies of Software Design"
-date:   2024-08-29
+date:   2025-02-24
 categories: jekyll update
 ---
 
@@ -17,4 +17,4 @@ Academia is a broad statement, and I have a lot of experience in physics, where 
 
 All this back story to say that in academia things like documentation, good naming, good architecture, user interface, dev interface, refactoring, package management, etc. are rarely seen as worth the time because they don't affect the results. But I argue that they do affect the results. If your code starts off clean, or you take the time to regularly improve or clean it you will be less likely to make mistakes, bugs will have a harder time hiding, and testing your software for expected behavior becomes faster and easier. That said, sometimes time is of the essence and cleaning up is time intensive. You have to strike a balance, but it must be a *balance*. Otherwise you will likely just get lost along the way, and no one will pick up and carry on your project. 
 
-When I moved to industry I was working in research and development on niche applications of computer vision in agriculture. 
+When I moved to industry I was working in research and development on niche applications of computer vision in agriculture. Things were better in terms of code-base setup but this was a startup, and "move fast, and break things" was not an explicit motto, but it sure felt like that was sometimes the approach. But I got introduced to better approaches to testing, package management, versioning, documentation, linting, pre-commit hooks, ci/cd tools, and more. Which are all great, but were still internal, and with not a ton of oversight. The company was small and a lot of information was kept in the minds of the people who had developed the code. 
