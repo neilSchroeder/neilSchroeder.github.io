@@ -1,0 +1,51 @@
+---
+layout: single
+author_profile: false
+title: " "
+---
+
+<p style="font-size: 1.1em; line-height: 1.7; margin-bottom: 2em;">
+  PhD Physicist turned ML Engineer. I build open-source climate data tools at
+  Eagle Rock Analytics, and write about software design, machine learning, and
+  the intersections of science and code.
+</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1em; margin-bottom: 2em;">
+
+  <div class="feature-card">
+    <span class="feature-icon"><i class="fas fa-pen-nib"></i></span>
+    <h3>Latest Post</h3>
+    {% assign latest = site.posts.first %}
+    <p>{{ latest.title }}</p>
+    <a href="{{ latest.url }}">Read &rarr;</a>
+  </div>
+
+  <div class="feature-card">
+    <span class="feature-icon"><i class="fab fa-github"></i></span>
+    <h3>Open Source</h3>
+    <p>Check out my projects and contributions on GitHub.</p>
+    <a href="https://github.com/neilSchroeder" rel="noopener noreferrer" target="_blank">GitHub &rarr;</a>
+  </div>
+
+  <div class="feature-card">
+    <span class="feature-icon"><i class="fas fa-newspaper"></i></span>
+    <h3>Substack</h3>
+    <p>Longer-form articles on science, software, and engineering.</p>
+    <a href="https://substack.com/@nschroed" rel="noopener noreferrer" target="_blank">Substack &rarr;</a>
+  </div>
+
+</div>
+
+<h2 style="border-bottom: 2px solid #7a9e6e; padding-bottom: 0.3em;">Recent Posts</h2>
+
+{% for post in site.posts limit:5 %}
+  <article style="margin-bottom: 1.5em;">
+    <h3 style="margin-bottom: 0.2em;">
+      <a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a>
+    </h3>
+    <small style="color: #a09888;">{{ post.date | date: "%B %-d, %Y" }}</small>
+    {% if post.excerpt %}<p style="margin-top: 0.4em;">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+{% endfor %}
+
+<p><a href="/blog/">View all posts &rarr;</a></p>

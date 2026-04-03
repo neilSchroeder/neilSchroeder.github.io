@@ -2,7 +2,11 @@
 layout: single
 title:  "Software Philosophy - Clean Code And Philosophies of Software Design"
 date:   2025-02-24
-categories: jekyll update
+categories: software-engineering
+tags:
+  - clean-code
+  - refactoring
+  - software-design
 ---
 
 ## Some History and Context

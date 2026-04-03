@@ -1,0 +1,222 @@
+/* ==========================================================================
+   Craftsman skin — deep blue-gray workshop with sage green + amber accents.
+   Wood-grain texture in header. No brown panels.
+   ========================================================================== */
+
+/* --- Colors --- */
+
+// Base palette — deep blue-gray workshop
+$workshop-dark:     #151a24;        // deepest background
+$workshop-mid:      #1c2233;        // panels, sidebar
+$workshop-light:    #242b3d;        // card backgrounds, lighter sections
+$workshop-border:   #2e3650;        // subtle borders
+
+// Text — warm off-whites (no harsh white)
+$warm-white:        #e0dbd3;        // primary body text
+$warm-muted:        #a09888;        // secondary/muted text
+$warm-bright:       #ede8e0;        // headings, emphasis
+
+// Green — plants (kept from original)
+$sage:              #7a9e6e;        // primary sage green
+$forest:            #4a7c4a;        // deeper forest green
+$moss:              #5b7a4a;        // mossy mid-tone
+$sage-light:        #a3c496;        // lighter sage for hover
+
+// Accent — amber/gold workshop warmth
+$amber:             #d4a84b;        // primary accent
+$amber-light:       #e8c06a;        // hover / bright accent
+$amber-dim:         #a07c2e;        // visited links
+
+// Utility
+$steel-blue:        #5b8fa8;        // info notices
+$rust:              #c4663a;        // danger/warning
+
+/* --- Skin variables --- */
+
+$background-color: $workshop-dark !default;
+$text-color: $warm-white !default;
+$muted-text-color: $warm-muted !default;
+$primary-color: $sage !default;
+$border-color: $workshop-border !default;
+$code-background-color: $workshop-mid !default;
+$code-background-color-dark: $workshop-dark !default;
+$footer-background-color: $workshop-mid !default;
+
+$link-color: $sage !default;
+$link-color-hover: $amber !default;
+$link-color-visited: mix($sage, $warm-muted, 60%) !default;
+
+$masthead-link-color: $warm-bright !default;
+$masthead-link-color-hover: $amber !default;
+
+$navicon-link-color-hover: $sage !default;
+
+/* --- Notices --- */
+
+$notice-background-mix: 20% !default;
+
+$success-color: $forest !default;
+$warning-color: $amber !default;
+$danger-color: $rust !default;
+$info-color: $steel-blue !default;
+
+/* --- Navigation / sidebar --- */
+
+$nav-toggle-color: $warm-bright !default;
+
+/* --- Component styles --- */
+
+.author__urls.social-icons .svg-inline--fa,
+.author__urls.social-icons .fab,
+.author__urls.social-icons .fas,
+.author__urls.social-icons .far {
+  color: $sage;
+}
+
+.page__footer {
+  color: $warm-muted;
+  border-top: 1px solid $workshop-border;
+
+  a {
+    color: $sage;
+
+    &:hover {
+      color: $amber;
+    }
+  }
+}
+
+.page__footer footer {
+  color: $warm-muted;
+}
+
+.pagination--pager {
+  color: $warm-white;
+  border-color: $workshop-border;
+  background-color: $workshop-light;
+
+  &:hover {
+    background-color: $workshop-mid;
+    color: $amber;
+  }
+
+  &.disabled {
+    color: $warm-muted;
+    background-color: $workshop-dark;
+    border-color: $workshop-border;
+  }
+}
+
+.greedy-nav {
+  background: $workshop-mid;
+  border-bottom: 2px solid $sage;
+
+  a {
+    color: $warm-bright;
+
+    &:hover {
+      color: $amber;
+    }
+  }
+
+  .visible-links a:before {
+    background: $sage;
+  }
+
+  button {
+    color: $warm-bright;
+  }
+}
+
+.masthead {
+  background-color: $workshop-mid;
+  background-image: url("/assets/images/wood-grain.svg");
+  background-size: cover;
+  border-bottom: none;
+}
+
+.search__toggle {
+  color: $warm-bright;
+
+  &:hover {
+    color: $amber;
+  }
+}
+
+.archive__item-title a {
+  color: $warm-bright;
+
+  &:hover {
+    color: $sage;
+  }
+}
+
+.toc {
+  .nav__title {
+    color: $warm-bright;
+    background-color: $forest;
+  }
+
+  a {
+    color: $warm-white;
+    border-bottom-color: $workshop-border;
+
+    &:hover {
+      color: $amber;
+    }
+  }
+}
+
+.sidebar {
+  background-color: transparent;
+}
+
+.nav__list .nav__items a {
+  color: $warm-white;
+
+  &:hover {
+    color: $amber;
+  }
+}
+
+/* --- Featured cards on homepage --- */
+
+.feature-card {
+  background-color: $workshop-light;
+  border: 1px solid $workshop-border;
+  border-radius: 6px;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    border-color: $sage;
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    margin-top: 0;
+    color: $warm-bright;
+  }
+
+  p {
+    color: $warm-muted;
+    font-size: 0.9em;
+  }
+
+  a {
+    color: $sage;
+    font-weight: 600;
+
+    &:hover {
+      color: $amber;
+    }
+  }
+
+  .feature-icon {
+    color: $amber;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    display: block;
+  }
+}

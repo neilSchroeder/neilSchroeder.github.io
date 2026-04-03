@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "craftsman" # custom skin: craftsman home + plants vibe
 
 # Site Settings
 locale                   : "en-US"
-title                    : # site title, e.g., "Minimal Mistakes"
+title                    : "Neil Schroeder, PhD"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Neil Schroeder, PhD"
@@ -59,7 +59,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -110,54 +110,39 @@ author:
   location         : "Minneapolis, MN"
   # email            : mailto:neil.raymond.schroeder@gmail.com
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:neil.raymond.schroeder@email.com"
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Google Scholar"
-      icon: "ai ai-fw ai-google-scholar"
-      url: "https://scholar.google.com/citations?user=Ie1EchUAAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/neilSchroeder"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url: "https://gitlab.cern.ch/nschroed"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/nschroed/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/that_higgs_guy"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-8336-6141"
+    - label: "Substack"
+      icon: "fas fa-fw fa-pen-nib"
+      url: "https://substack.com/@nschroed"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:neil.raymond.schroeder@email.com"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://github.com/neilSchroeder"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/nschroed/"
+    - label: "Substack"
+      icon: "fas fa-fw fa-pen-nib"
+      url: "https://substack.com/@nschroed"
 
 
 # Reading Files
-include: ["_pages"]
 include:
+  - _pages
   - .htaccess
 exclude:
   - "*.sublime-project"
@@ -288,7 +273,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
@@ -299,4 +284,4 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
