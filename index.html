@@ -2,50 +2,62 @@
 layout: single
 author_profile: false
 title: " "
+classes: wide home-page
 ---
 
-<p style="font-size: 1.1em; line-height: 1.7; margin-bottom: 2em;">
-  PhD Physicist turned ML Engineer. I build open-source climate data tools at
-  Eagle Rock Analytics, and write about software design, machine learning, and
-  the intersections of science and code.
-</p>
+{% assign latest = site.posts.first %}
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1em; margin-bottom: 2em;">
+<div class="home-shell">
+  <section class="home-intro" aria-labelledby="home-title">
+    <div class="home-intro__copy">
+      <p class="eyebrow">Physicist · Software engineer · Writer</p>
+      <h1 id="home-title">Neil Schroeder</h1>
+      <p class="home-intro__lede">
+        I build open-source climate data tools at Eagle Rock Analytics and write
+        about software design, machine learning, and the places where science
+        meets code.
+      </p>
+      <div class="home-intro__actions">
+        <a class="button button--primary" href="{{ latest.url | relative_url }}">
+          Read the latest essay <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
 
-  <div class="feature-card">
-    <span class="feature-icon"><i class="fas fa-pen-nib"></i></span>
-    <h3>Latest Post</h3>
-    {% assign latest = site.posts.first %}
-    <p>{{ latest.title }}</p>
-    <a href="{{ latest.url }}">Read &rarr;</a>
-  </div>
+    <figure class="home-portrait">
+      <img src="{{ '/assets/images/avatar_professional.jpg' | relative_url }}" alt="Neil Schroeder" width="420" height="420">
+      <figcaption>Minneapolis, Minnesota</figcaption>
+    </figure>
+  </section>
 
-  <div class="feature-card">
-    <span class="feature-icon"><i class="fab fa-github"></i></span>
-    <h3>Open Source</h3>
-    <p>Check out my projects and contributions on GitHub.</p>
-    <a href="https://github.com/neilSchroeder" rel="noopener noreferrer" target="_blank">GitHub &rarr;</a>
-  </div>
+  <section class="home-feature" aria-labelledby="featured-title">
+    <div class="section-heading">
+      <p class="eyebrow">Featured writing</p>
+    </div>
+    <article class="featured-essay">
+      <div class="featured-essay__meta">
+        <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%B %-d, %Y" }}</time>
+      </div>
+      <div class="featured-essay__body">
+        <h2 id="featured-title"><a href="{{ latest.url | relative_url }}">{{ latest.title }}</a></h2>
+        {% if latest.excerpt %}<p>{{ latest.excerpt | strip_html | truncate: 220 }}</p>{% endif %}
+        <a class="text-link" href="{{ latest.url | relative_url }}">Continue reading <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </article>
+  </section>
 
-  <div class="feature-card">
-    <span class="feature-icon"><i class="fas fa-newspaper"></i></span>
-    <h3>Substack</h3>
-    <p>Longer-form articles on science, software, and engineering.</p>
-    <a href="https://substack.com/@nschroed" rel="noopener noreferrer" target="_blank">Substack &rarr;</a>
-  </div>
-
+  <section class="home-writing" aria-labelledby="recent-title">
+    <div class="section-heading">
+      <h2 id="recent-title">Recent writing</h2>
+      <a href="{{ '/blog/' | relative_url }}">View the archive <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="writing-list">
+      {% for post in site.posts limit:5 %}
+        <article class="writing-list__item">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 </div>
-
-<h2 style="border-bottom: 2px solid #7a9e6e; padding-bottom: 0.3em;">Recent Posts</h2>
-
-{% for post in site.posts limit:5 %}
-  <article style="margin-bottom: 1.5em;">
-    <h3 style="margin-bottom: 0.2em;">
-      <a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a>
-    </h3>
-    <small style="color: #a09888;">{{ post.date | date: "%B %-d, %Y" }}</small>
-    {% if post.excerpt %}<p style="margin-top: 0.4em;">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
-  </article>
-{% endfor %}
-
-<p><a href="/blog/">View all posts &rarr;</a></p>

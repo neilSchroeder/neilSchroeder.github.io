@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Scientific Software Development and Vibe Coding"
-date:   2025-02-24
+date:   2025-04-03
 categories: software-engineering
 tags:
   - sofware-engineering
@@ -31,9 +31,10 @@ All of this leads me to believe that academia and technical R&D, especially the 
 
 ## Manifestations of Concern
 
+Universities are partnering with AI programs, my alma mater has now paired with gemini and offers gemini to all students seemingly without bound on use cases. Some classes and some professors seem to be putting restrictions on AI when it matters more, but I'm not convinced just saying "don't for your own benefit" will really work all that well. When I was that age I did all kinds of stuff that was not to my own benefit and was logically aware of it the whole time. Boy, that sounds cliche.
 
-Universities are partnering with AI programs, my alma mater has now paired with gemini and offers gemini to all students seemingly without bound on use cases. Some classes and some professors seem to be putting restrictions on AI when it matters more, but I'm not convinced just saying "don't for your own benefit" will really work all that well. When I was that age I did all kinds of stuff that was not to my own benefit and was logically aware of it the whole time. 
+I see more and more AI music, more and more AI code, more and more AI driven science and scientific writing. Everywhere I look in society it looks like AI has had a hand in shaping what I'm seeing. 
 
-People aren't being taught how to use AI, they're just using it blindly.
+And don't get me wrong, I'm using AI too. I am spending quite a bit of time thinking about how to use AI in my workflows, how I can optimize it to work better and faster, what tools are available for helping me plan with AI, how to improve context management and long-term planning. 
 
-Over budget project scientist used AI and made a fundamental mistake that could have been avoided with some critical thinking skills. 
+So, maybe I just need to swallow my own medicine. The only benefits I have are the benefits of education and problem solving. AI is just a new tool in the belt, and people need to explore how to use tools on their own, and sometimes in unhealthy ways. I suppose they'll figure it out, or maybe they won't. Who knows. 

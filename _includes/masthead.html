@@ -6,40 +6,45 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
 
-        {%- comment -%} Avatar + name on the left {%- endcomment -%}
         <div class="masthead__profile">
           <a class="masthead__name" href="{{ '/' | relative_url }}">
-            {{ site.masthead_title | default: site.title | escape_once | strip }}
+            Neil Schroeder
           </a>
-
-          {%- comment -%} Social icons inline {%- endcomment -%}
-          <div class="masthead__social">
-            {% for link in site.author.links %}
-              <a href="{{ link.url }}" title="{{ link.label }}" rel="noopener noreferrer" target="_blank">
-                <i class="{{ link.icon }}"></i>
-              </a>
-            {% endfor %}
-          </div>
         </div>
 
-        {%- comment -%} Nav links on the right {%- endcomment -%}
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
+            {%- unless link.url == '/' -%}
             <li class="masthead__menu-item">
               <a href="{{ link.url | relative_url }}"
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
               >{{ link.title }}</a>
             </li>
+            {%- endunless -%}
           {%- endfor -%}
         </ul>
 
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
+        <details class="mobile-nav">
+          <summary aria-label="Open navigation" title="Navigation">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </summary>
+          <ul>
+            {%- for link in site.data.navigation.main -%}
+              <li>
+                <a href="{{ link.url | relative_url }}"
+                  {% if link.description %} title="{{ link.description }}"{% endif %}
+                  {% if link.target %} target="{{ link.target }}"{% endif %}
+                >{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </details>
+
+        <button class="theme__toggle" type="button" data-theme-toggle aria-label="Switch color theme" aria-pressed="false">
+          <i class="fas fa-sun theme__icon theme__icon--sun" aria-hidden="true"></i>
+          <i class="fas fa-moon theme__icon theme__icon--moon" aria-hidden="true"></i>
         </button>
-        {% endif %}
 
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[locale].menu_label | default: "Toggle menu" }}</span>
